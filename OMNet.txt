@@ -1,6 +1,7 @@
 session hijacking:
 open acunetix acuart
 signup
+<script>alert(document.cookie)</script>(in search bar)
 inspect
 application
 cookies
